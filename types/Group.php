@@ -1,5 +1,5 @@
 <?php
-namespace dokuwiki\plugin\structgroup\types;
+namespace dokuwiki\plugin\structgroup8\types;
 
 use dokuwiki\plugin\struct\meta\QueryBuilder;
 use dokuwiki\plugin\struct\meta\QueryBuilderWhere;
@@ -25,8 +25,8 @@ class Group extends AbstractMultiBaseType {
         $rawvalue = parent::validate($rawvalue);
 
         if($this->config['existingonly']) {
-            /** @var \helper_plugin_structgroup_authgroup $authgroup */
-            $authgroup = plugin_load('helper', 'structgroup_authgroup');
+            /** @var \helper_plugin_structgroup8_authgroup $authgroup */
+            $authgroup = plugin_load('helper', 'structgroup8_authgroup');
 
             if(! in_array($rawvalue, $authgroup->getGroups())) {
                 throw new ValidationException('Group not found: "' . $rawvalue .
@@ -57,8 +57,8 @@ class Group extends AbstractMultiBaseType {
     public function handleAjax() {
         global $INPUT;
 
-        /** @var \helper_plugin_structgroup_authgroup $authgroup */
-        $authgroup = plugin_load('helper', 'structgroup_authgroup');
+        /** @var \helper_plugin_structgroup8_authgroup $authgroup */
+        $authgroup = plugin_load('helper', 'structgroup8_authgroup');
 
         // check minimum length
         $lookup = trim($INPUT->str('search'));
