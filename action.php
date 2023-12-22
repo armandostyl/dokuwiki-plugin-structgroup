@@ -3,11 +3,11 @@
  * DokuWiki Plugin structsection (Action Component)
  */
 // must be run within Dokuwiki
-use dokuwiki\plugin\structgroup\meta\ApplicationAspectKernel;
+use dokuwiki\plugin\structgroup8\meta\ApplicationAspectKernel;
 
 if (!defined('DOKU_INC')) die();
 
-class action_plugin_structgroup extends DokuWiki_Action_Plugin {
+class action_plugin_structgroup8 extends DokuWiki_Action_Plugin {
     /**
      * Registers a callback function for a given event
      *
@@ -19,7 +19,7 @@ class action_plugin_structgroup extends DokuWiki_Action_Plugin {
     }
 
     public function handle_init(Doku_Event &$event, $param) {
-        $event->data['Group'] = 'dokuwiki\\plugin\\structgroup\\types\\Group';
+        $event->data['Group'] = 'dokuwiki\\plugin\\structgroup8\\types\\Group';
     }
 }
 // vim:ts=4:sw=4:et:
