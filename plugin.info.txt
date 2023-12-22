@@ -1,7 +1,7 @@
-base   structgroup
-author Szymon Olewniczak
-email  it@rid.pl
-date   2019-02-05
-name   Struct Group
-desc   New struct type - dokuwiki user groups
-url    https://dokuwiki.org/plugin:structgroup
+base   structgroup8
+author Armandos Stylianakis
+email  
+date   2023-12-21
+name   Struct Group 8
+desc   PHP 8.0+ fork of structgroup plugin
+url    https://dokuwiki.org/plugin:structgroup8
