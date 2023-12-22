@@ -6,7 +6,7 @@
 // must be run within Dokuwiki
 if(!defined('DOKU_INC')) die();
 
-class helper_plugin_structgroup_authgroup extends DokuWiki_Plugin {
+class helper_plugin_structgroup8_authgroup extends DokuWiki_Plugin {
     protected $groupsloaded = false;
     protected $groups = array();
 
